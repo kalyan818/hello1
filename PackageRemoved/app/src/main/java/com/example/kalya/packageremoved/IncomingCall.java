@@ -13,5 +13,8 @@ public class IncomingCall extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Toast.makeText(context,"working",Toast.LENGTH_LONG).show();
+        if (intent.equals("android")){
+            Toast.makeText(context,"working",Toast.LENGTH_LONG).show();
+        }
     }
 }
